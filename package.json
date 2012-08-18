@@ -1,0 +1,10 @@
+{
+  "name": "flatiron-auth",
+  "description": "Basic authentication using Flatiron.js framework",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "flatiron": "0.2.8",
+    "connect": "2.4.3"
+  }
+}
