@@ -11,7 +11,7 @@ app.use(flatiron.plugins.http, {
   before: [
     connect.favicon(),
     connect.bodyParser(),
-    connect.cookieParser('rounds catspy'),
+    connect.cookieParser('catspy speed'),
     connect.session(),
     authenticate
   ]

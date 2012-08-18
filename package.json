@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "flatiron": "0.2.8",
-    "connect": "2.4.3"
+    "connect": "2.4.3",
+    "union": "0.3.4"
   }
 }
