@@ -2,11 +2,6 @@
     app = flatiron.app,
     connect = require('connect');
 
-var setRequestOriginalUrl = function(req, res) {
-  req.originalUrl = req.url;
-  res.emit('next');
-};
-
 var authenticate = function(req, res) {
   console.log('Authenticating...');
   res.emit('next');
@@ -14,7 +9,6 @@ var authenticate = function(req, res) {
 
 app.use(flatiron.plugins.http, {
   before: [
-    setRequestOriginalUrl,
     connect.favicon(),
     connect.bodyParser(),
     connect.cookieParser('catspy speed'),
