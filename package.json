@@ -4,8 +4,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "connect": "2.4.4",
+    "union": "0.3.4",
     "flatiron": "0.2.8",
-    "connect": "2.4.3",
-    "union": "0.3.4"
+    "plates": "0.4.6"
   }
 }
