@@ -21,7 +21,7 @@ app.use(flatiron.plugins.http, {
     connect.session(),
     function(req, res) {
       console.log('Authenticating...');
-      console.dir(req.session);;
+      console.dir(req.session);
       if (req.url !== '/login' && req.session.user === undefined) {
         res.redirect('/login');
       } else {
@@ -32,7 +32,7 @@ app.use(flatiron.plugins.http, {
 });
 
 app.router.get('/', function() {
-  var html = 'Hello <span id="user"></span>. This app shows a basic Flatiron.js authentication. ' + 
+  var html = 'Hello <span id="user"></span>. This app shows a basic Flatiron.js authentication. ' +
              '<a href="/logout">Logout.</a>';
   var data = { "user": this.req.session.user };
 
@@ -78,7 +78,7 @@ app.router.post('/login', function() {
 
   this.req.session.save(function(err) {
     if (err) {
-      throw err
+      throw err;
     }
     res.redirect('/');
   });
@@ -90,7 +90,7 @@ app.router.get('/logout', function() {
 });
 
 app.router.get('/hey', function() {
-  var html = 'Hello <span id="user"></span>. This is another secured page. ' + 
+  var html = 'Hello <span id="user"></span>. This is another secured page. ' +
              '<a href="/logout">Logout.</a>';
   var data = { "user": this.req.session.user };
 
